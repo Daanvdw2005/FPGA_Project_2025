@@ -1,0 +1,13 @@
+0.6
+2019.2
+Nov  6 2019
+21:57:16
+C:/Users/vande/Documents/0AP25_26/DSD/Project_documentatie/spellogica/spellogica.srcs/sim_1/new/tb_game_logic.vhd,1767126589,vhdl,,,,tb_game_logic,,,,,,,,
+C:/Users/vande/Documents/0AP25_26/DSD/Project_documentatie/spellogica/spellogica.srcs/sim_1/new/tb_seg7_display.vhd,1767130245,vhdl,,,,tb_seg7_display,,,,,,,,
+C:/Users/vande/Documents/0AP25_26/DSD/Project_documentatie/spellogica/spellogica.srcs/sources_1/new/Text_display.vhd,1766500021,vhdl,,,,text_display,,,,,,,,
+C:/Users/vande/Documents/0AP25_26/DSD/Project_documentatie/spellogica/spellogica.srcs/sources_1/new/Top.vhd,1766493954,vhdl,,,,top,,,,,,,,
+C:/Users/vande/Documents/0AP25_26/DSD/Project_documentatie/spellogica/spellogica.srcs/sources_1/new/board.vhd,1766483543,vhdl,,,,board,,,,,,,,
+C:/Users/vande/Documents/0AP25_26/DSD/Project_documentatie/spellogica/spellogica.srcs/sources_1/new/cell.vhd,1766483527,vhdl,C:/Users/vande/Documents/0AP25_26/DSD/Project_documentatie/spellogica/spellogica.srcs/sources_1/new/board.vhd,,,cell,,,,,,,,
+C:/Users/vande/Documents/0AP25_26/DSD/Project_documentatie/spellogica/spellogica.srcs/sources_1/new/game_logic.vhd,1766511734,vhdl,,,,game_logic,,,,,,,,
+C:/Users/vande/Documents/0AP25_26/DSD/Project_documentatie/spellogica/spellogica.srcs/sources_1/new/seg7_display.vhd,1767130559,vhdl,,,,seg7_display,,,,,,,,
+C:/Users/vande/Documents/0AP25_26/DSD/Project_documentatie/spellogica/spellogica.srcs/sources_1/new/vga_sync.vhd,1766498349,vhdl,,,,vga_sync,,,,,,,,

@@ -1,0 +1,10 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/vande/Documents/0AP25_26/DSD/Project_documentatie/spellogica/spellogica.srcs/sources_1/new/Text_display.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'text_display'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/vande/Documents/0AP25_26/DSD/Project_documentatie/spellogica/spellogica.srcs/sources_1/new/cell.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'cell'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/vande/Documents/0AP25_26/DSD/Project_documentatie/spellogica/spellogica.srcs/sources_1/new/board.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'board'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/vande/Documents/0AP25_26/DSD/Project_documentatie/spellogica/spellogica.srcs/sources_1/new/vga_sync.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'vga_sync'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/vande/Documents/0AP25_26/DSD/Project_documentatie/spellogica/spellogica.srcs/sources_1/new/Top.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'top'

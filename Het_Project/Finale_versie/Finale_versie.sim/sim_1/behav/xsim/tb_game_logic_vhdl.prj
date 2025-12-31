@@ -1,0 +1,12 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../spellogica.srcs/sources_1/new/Text_display.vhd" \
+"../../../../spellogica.srcs/sources_1/new/cell.vhd" \
+"../../../../spellogica.srcs/sources_1/new/board.vhd" \
+"../../../../spellogica.srcs/sources_1/new/game_logic.vhd" \
+"../../../../spellogica.srcs/sources_1/new/seg7_display.vhd" \
+"../../../../spellogica.srcs/sources_1/new/vga_sync.vhd" \
+"../../../../spellogica.srcs/sources_1/new/Top.vhd" \
+
+# Do not sort compile order
+nosort

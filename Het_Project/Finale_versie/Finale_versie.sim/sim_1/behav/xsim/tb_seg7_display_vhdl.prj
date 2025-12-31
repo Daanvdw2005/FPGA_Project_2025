@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../spellogica.srcs/sources_1/new/seg7_display.vhd" \
+"../../../../spellogica.srcs/sim_1/new/tb_seg7_display.vhd" \
+
+# Do not sort compile order
+nosort

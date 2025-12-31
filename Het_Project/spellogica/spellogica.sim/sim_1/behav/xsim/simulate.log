@@ -1,0 +1,5 @@
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+Failure: Simulatie klaar: Kijk of WIN hoog is!
+Time: 510 ns  Iteration: 0  Process: /tb_game_logic/stim_proc  File: C:/Users/vande/Documents/0AP25_26/DSD/Project_documentatie/spellogica/spellogica.srcs/sim_1/new/tb_game_logic.vhd
+$finish called at time : 510 ns : File "C:/Users/vande/Documents/0AP25_26/DSD/Project_documentatie/spellogica/spellogica.srcs/sim_1/new/tb_game_logic.vhd" Line 153
