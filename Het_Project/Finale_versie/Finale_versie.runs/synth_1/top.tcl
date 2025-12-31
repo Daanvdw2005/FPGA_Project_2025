@@ -22,20 +22,20 @@ create_project -in_memory -part xc7a35tcpg236-1
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
-set_property webtalk.parent_dir C:/Users/vande/Documents/0AP25_26/DSD/Project_documentatie/spellogica/spellogica.cache/wt [current_project]
-set_property parent.project_path C:/Users/vande/Documents/0AP25_26/DSD/Project_documentatie/spellogica/spellogica.xpr [current_project]
+set_property webtalk.parent_dir C:/Users/vande/Documents/0AP25_26/DSD/Project_documentatie/Finale_versie/Finale_versie.cache/wt [current_project]
+set_property parent.project_path C:/Users/vande/Documents/0AP25_26/DSD/Project_documentatie/Finale_versie/Finale_versie.xpr [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
-set_property ip_output_repo c:/Users/vande/Documents/0AP25_26/DSD/Project_documentatie/spellogica/spellogica.cache/ip [current_project]
+set_property ip_output_repo c:/Users/vande/Documents/0AP25_26/DSD/Project_documentatie/Finale_versie/Finale_versie.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 read_vhdl -library xil_defaultlib {
-  C:/Users/vande/Documents/0AP25_26/DSD/Project_documentatie/spellogica/spellogica.srcs/sources_1/new/Text_display.vhd
-  C:/Users/vande/Documents/0AP25_26/DSD/Project_documentatie/spellogica/spellogica.srcs/sources_1/new/cell.vhd
-  C:/Users/vande/Documents/0AP25_26/DSD/Project_documentatie/spellogica/spellogica.srcs/sources_1/new/board.vhd
-  C:/Users/vande/Documents/0AP25_26/DSD/Project_documentatie/spellogica/spellogica.srcs/sources_1/new/game_logic.vhd
-  C:/Users/vande/Documents/0AP25_26/DSD/Project_documentatie/spellogica/spellogica.srcs/sources_1/new/seg7_display.vhd
-  C:/Users/vande/Documents/0AP25_26/DSD/Project_documentatie/spellogica/spellogica.srcs/sources_1/new/vga_sync.vhd
-  C:/Users/vande/Documents/0AP25_26/DSD/Project_documentatie/spellogica/spellogica.srcs/sources_1/new/Top.vhd
+  C:/Users/vande/Documents/0AP25_26/DSD/Project_documentatie/Finale_versie/Finale_versie.srcs/sources_1/new/Text_display.vhd
+  C:/Users/vande/Documents/0AP25_26/DSD/Project_documentatie/Finale_versie/Finale_versie.srcs/sources_1/new/cell.vhd
+  C:/Users/vande/Documents/0AP25_26/DSD/Project_documentatie/Finale_versie/Finale_versie.srcs/sources_1/new/board.vhd
+  C:/Users/vande/Documents/0AP25_26/DSD/Project_documentatie/Finale_versie/Finale_versie.srcs/sources_1/new/game_logic.vhd
+  C:/Users/vande/Documents/0AP25_26/DSD/Project_documentatie/Finale_versie/Finale_versie.srcs/sources_1/new/seg7_display.vhd
+  C:/Users/vande/Documents/0AP25_26/DSD/Project_documentatie/Finale_versie/Finale_versie.srcs/sources_1/new/vga_sync.vhd
+  C:/Users/vande/Documents/0AP25_26/DSD/Project_documentatie/Finale_versie/Finale_versie.srcs/sources_1/new/Top.vhd
 }
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the

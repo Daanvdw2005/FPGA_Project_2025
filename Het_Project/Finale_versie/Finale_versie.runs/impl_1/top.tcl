@@ -69,11 +69,11 @@ set rc [catch {
   create_project -in_memory -part xc7a35tcpg236-1
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
-  set_property webtalk.parent_dir C:/Users/vande/Documents/0AP25_26/DSD/Project_documentatie/spellogica/spellogica.cache/wt [current_project]
-  set_property parent.project_path C:/Users/vande/Documents/0AP25_26/DSD/Project_documentatie/spellogica/spellogica.xpr [current_project]
-  set_property ip_output_repo C:/Users/vande/Documents/0AP25_26/DSD/Project_documentatie/spellogica/spellogica.cache/ip [current_project]
+  set_property webtalk.parent_dir C:/Users/vande/Documents/0AP25_26/DSD/Project_documentatie/Finale_versie/Finale_versie.cache/wt [current_project]
+  set_property parent.project_path C:/Users/vande/Documents/0AP25_26/DSD/Project_documentatie/Finale_versie/Finale_versie.xpr [current_project]
+  set_property ip_output_repo C:/Users/vande/Documents/0AP25_26/DSD/Project_documentatie/Finale_versie/Finale_versie.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
-  add_files -quiet C:/Users/vande/Documents/0AP25_26/DSD/Project_documentatie/spellogica/spellogica.runs/synth_1/top.dcp
+  add_files -quiet C:/Users/vande/Documents/0AP25_26/DSD/Project_documentatie/Finale_versie/Finale_versie.runs/synth_1/top.dcp
   read_xdc C:/Users/vande/Documents/0AP25_26/DSD/Basys3_Master.xdc
   link_design -top top -part xc7a35tcpg236-1
   close_msg_db -file init_design.pb

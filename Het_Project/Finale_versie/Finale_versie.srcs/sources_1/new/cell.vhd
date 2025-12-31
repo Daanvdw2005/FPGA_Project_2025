@@ -1,3 +1,18 @@
+--------------------------------------------------------------------------------
+-- Project      : 3-op-een-rij
+-- Bestandsnaam : cell.vhd
+-- Auteur       : Daan Van der Weken
+--
+-- Beschrijving :
+-- Dit component vertegenwoordigt één enkel vakje op het speelbord.
+-- Het heeft twee taken:
+-- 1. Logica: Onthouden of het vakje Leeg, X of O is. Het verandert alleen
+--    als het geselecteerd is (sel='1'), bevestigd wordt (confirm='1') én leeg is.
+-- 2. Visualisatie: Berekent op basis van de pixel-coördinaten of er een
+--    Rood Kruis (X) of een Cyaan Blok (O) getekend moet worden.
+--
+-- Generics     : POS_X, POS_Y (De positie van dit specifieke vakje op het scherm)
+--------------------------------------------------------------------------------
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.NUMERIC_STD.ALL;

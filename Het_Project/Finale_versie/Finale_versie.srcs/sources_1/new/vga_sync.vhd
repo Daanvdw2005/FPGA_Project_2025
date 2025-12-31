@@ -1,3 +1,18 @@
+--------------------------------------------------------------------------------
+-- Project      : 3-op-een-rij
+-- Bestandsnaam : vga_sync.vhd
+-- Auteur       : Daan Van der Weken
+--
+-- Beschrijving :
+-- Deze module verzorgt de VGA-synchronisatie. Het genereert de HSYNC en VSYNC
+-- signalen die nodig zijn om een scherm aan te sturen op 640x480 @ 60Hz.
+-- Daarnaast deelt het de 100MHz systeemklok naar een 25MHz pixelklok en
+-- houdt het de huidige X- en Y-coördinaten van de pixel bij.
+--
+-- Ingangen     : clk (100MHz), reset
+-- Uitgangen    : hsync, vsync, video_on (actief beeldgebied), 
+--                p_tick (25MHz puls), x, y (coördinaten)
+--------------------------------------------------------------------------------
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.NUMERIC_STD.ALL;

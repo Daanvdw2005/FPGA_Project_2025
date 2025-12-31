@@ -1,3 +1,20 @@
+--------------------------------------------------------------------------------
+-- Project      : 3-op-een-rij
+-- Bestandsnaam : text_display.vhd
+-- Auteur       : Daan Van der Weken
+--
+-- Beschrijving :
+-- Deze module verzorgt alle tekstweergave op het scherm.
+-- Het bevat een interne 'bitmap font' (8x8 pixels per letter) en logica om
+-- verschillende berichten te tonen afhankelijk van de spelstatus:
+-- 1. Intro scherm (Project info, instructies)
+-- 2. Error melding (Foutieve zet)
+-- 3. Winnaar scherm (Wie heeft gewonnen)
+-- 4. Kampioen scherm (Ultimate win)
+--
+-- Ingangen     : pixel_x, pixel_y, game states (win, intro, error, etc.)
+-- Uitgangen    : rgb_out (pixelkleur voor de tekst-overlay)
+--------------------------------------------------------------------------------
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.NUMERIC_STD.ALL;
@@ -13,7 +30,6 @@ entity text_display is
         is_intro    : in  std_logic;
         ultimate_win: in  std_logic;
         
-        -- NIEUW: error input
         is_error    : in  std_logic;
         
         rgb_out     : out std_logic_vector(11 downto 0)
@@ -121,7 +137,7 @@ begin
             if winner = "01" then 
                  text_color <= "111100000000"; line3(0)<=F_X; 
             else
-                 text_color <= "000011111111"; line3(0)<=F_Sq; -- HIER AANGEPAST NAAR VIERKANT
+                 text_color <= "000011111111"; line3(0)<=F_Sq;
             end if;
             line3(2)<=F_W; line3(3)<=F_I; line3(4)<=F_N; line3(5)<=F_T;
 
@@ -132,7 +148,7 @@ begin
             if winner = "01" then
                 line2(8)<=F_X; text_color <= "111100000000";
             else
-                line2(8)<=F_Sq; text_color <= "000011111111"; -- HIER AANGEPAST NAAR VIERKANT
+                line2(8)<=F_Sq; text_color <= "000011111111";
             end if;
         end if;
     end process;

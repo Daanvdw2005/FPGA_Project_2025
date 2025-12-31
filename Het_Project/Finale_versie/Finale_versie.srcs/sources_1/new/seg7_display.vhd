@@ -1,3 +1,21 @@
+--------------------------------------------------------------------------------
+-- Project      : 3-op-een-rij
+-- Bestandsnaam : seg7_display.vhd
+-- Auteur       : Daan Van der Weken
+--
+-- Beschrijving :
+-- Deze module stuurt het 4-cijferige 7-segment display op het FPGA-bord aan.
+-- Het toont de score van Speler X op het linker display en Speler O op het
+-- rechter display. De middelste twee displays blijven uit.
+--
+-- Werking:
+-- Er wordt gebruik gemaakt van Time Division Multiplexing (TDM). Een teller
+-- wisselt op hoge snelheid welk display (Anode) actief is, zodat het voor het
+-- menselijk oog lijkt alsof ze allemaal tegelijk aan staan.
+--
+-- Ingangen     : clk, reset, score_x, score_o
+-- Uitgangen    : seg (segmenten A-G), an (anodes 0-3)
+--------------------------------------------------------------------------------
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.NUMERIC_STD.ALL;
@@ -39,10 +57,10 @@ begin
                 an <= "1110"; -- Rechts (Speler O)
                 hex_val <= score_o;
             when "01" => 
-                an <= "1101"; -- Midden-Rechts (niets of streepje)
+                an <= "1101"; -- Midden-Rechts (niets)
                 hex_val <= "1111"; -- F = uit (zie hieronder)
             when "10" => 
-                an <= "1011"; -- Midden-Links (niets of streepje)
+                an <= "1011"; -- Midden-Links (niets)
                 hex_val <= "1111"; 
             when "11" => 
                 an <= "0111"; -- Links (Speler X)

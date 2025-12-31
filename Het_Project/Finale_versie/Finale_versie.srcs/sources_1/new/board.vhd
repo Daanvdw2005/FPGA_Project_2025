@@ -1,3 +1,19 @@
+--------------------------------------------------------------------------------
+-- Project      : 3-op-een-rij
+-- Bestandsnaam : board.vhd
+-- Auteur       : Daan Van der Weken
+--
+-- Beschrijving :
+-- Dit blok vormt het visuele speelbord. Het heeft twee hoofdfuncties:
+-- 1. Het genereren van 9 instanties van de 'cell' entity (de vakjes).
+-- 2. Het tekenen van de witte roosterlijnen en de achtergrondkleur.
+--
+-- Het combineert de pixel-data van de roosterlijnen en de individuele cellen
+-- tot één uiteindelijk RGB-signaal voor de VGA-controller.
+--
+-- Ingangen     : clk, reset, sw, turn, confirm, pixel_x/y
+-- Uitgangen    : rgb_out (pixelkleur), cells_state (status van alle 9 vakjes)
+--------------------------------------------------------------------------------
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.NUMERIC_STD.ALL;

@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/vande/Documents/0AP25_26/DSD/Project_documentatie/spellogica/spellogica.runs/synth_1'
+HD_PWD='C:/Users/vande/Documents/0AP25_26/DSD/Project_documentatie/Finale_versie/Finale_versie.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

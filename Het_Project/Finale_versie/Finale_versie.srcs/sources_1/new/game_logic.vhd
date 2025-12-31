@@ -1,3 +1,19 @@
+--------------------------------------------------------------------------------
+-- Project      : 3-op-een-rij
+-- Bestandsnaam : game_logic.vhd
+-- Auteur       : Daan Van der Weken
+--
+-- Beschrijving :
+-- Dit is het 'brein' van het spel. Deze module bevat de Finite State Machine (FSM)
+-- die het spelverloop regelt (Intro -> Spelen -> Winnaar -> Reset).
+-- Het controleert ook:
+-- 1. Of een zet geldig is (vakje leeg + slechts 1 switch aan).
+-- 2. Of iemand gewonnen heeft (horizontaal, verticaal, diagonaal).
+-- 3. De scorestand en wiens beurt het is.
+--
+-- Ingangen     : clk, resets, sw (keuze), btnC (bevestig), cells_state (bord info)
+-- Uitgangen    : Spelstatus (win, turn, score), scherm-aansturing (intro/win)
+--------------------------------------------------------------------------------
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.NUMERIC_STD.ALL;
@@ -5,8 +21,8 @@ use IEEE.NUMERIC_STD.ALL;
 entity game_logic is
     port (
         clk         : in  std_logic;
-        reset_hard  : in  std_logic; -- Reset knop (Switch of harde reset)
-        reset_soft  : in  std_logic; -- Nieuw potje (BTNU)
+        reset_hard  : in  std_logic; -- Reset knop 
+        reset_soft  : in  std_logic; -- Nieuw potje
         
         sw          : in  std_logic_vector(8 downto 0);
         btnC        : in  std_logic; -- Bevestig knop
@@ -15,7 +31,7 @@ entity game_logic is
         turn_out    : out std_logic;
         confirm_out : out std_logic;
         
-        -- Input van het bord (status van alle vakjes)
+        -- status van alle vakjes
         cells_state : in  std_logic_vector(17 downto 0);
         
         -- Game status outputs
@@ -80,7 +96,7 @@ begin
     winner <= winner_i;
     win <= win_detected;
 
-    -- 2. Button Edge Detection (Voor ZOWEL btnC als reset_soft/btnU)
+    -- 2. Button Edge Detection
     process(clk)
     begin
         if rising_edge(clk) then
@@ -91,7 +107,7 @@ begin
             end if;
             btnC_prev <= btnC;
             
-            -- Detecteer rising edge voor Reset (btnU) -- NIEUW & CRUCIAAL
+            -- Detecteer rising edge voor Reset (btnU)
             btnU_pressed <= '0';
             if reset_soft = '1' and btnU_prev = '0' then
                 btnU_pressed <= '1';
@@ -137,11 +153,11 @@ begin
             
             confirm_out <= '0'; -- Default uit
             
-            -- GLOBALE RESET CHECK (Werkt in elke state behalve INTRO)
+            -- GLOBALE RESET CHECK
             -- Als op btnU gedrukt wordt, reset het spel direct.
             if btnU_pressed = '1' and current_state /= INTRO then
                 current_state <= PLAYING;
-                turn_i <= '0'; -- ALTIJD terug naar X bij een reset!
+                turn_i <= '0';
                 -- Scores behouden we (tenzij we in winner screen zitten, zie onder)
             else
 

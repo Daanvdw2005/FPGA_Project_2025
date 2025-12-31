@@ -1,3 +1,16 @@
+--------------------------------------------------------------------------------
+-- Project      : 3-op-een-rij
+-- Bestandsnaam : top.vhd
+-- Auteur       : Daan Van der Weken
+--
+-- Beschrijving :
+-- Dit is de top-level module van het spel. Het verbindt alle componenten met
+-- elkaar: de VGA-controller, de spellogica, de bord-renderer, de tekst-
+-- generator en het 7-segment scorebord.
+--
+-- Ingangen     : clk, reset, btnU (soft reset), btnC (confirm), sw (grid selectie)
+-- Uitgangen    : VGA (hsync, vsync, rgb), 7-segment (seg, an)
+--------------------------------------------------------------------------------
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.NUMERIC_STD.ALL;
@@ -31,7 +44,7 @@ architecture Behavioral of top is
               cells_state : in std_logic_vector(17 downto 0); 
               win : out std_logic; winner : out std_logic_vector(1 downto 0);
               score_x_out, score_o_out : out std_logic_vector(3 downto 0);
-              is_intro, ultimate_win, error_out : out std_logic); -- error_out toegevoegd
+              is_intro, ultimate_win, error_out : out std_logic);
     end component;
 
     component board
@@ -44,7 +57,7 @@ architecture Behavioral of top is
     component text_display
         port (pixel_x, pixel_y : in std_logic_vector(9 downto 0); 
               video_on, win : in std_logic; winner : in std_logic_vector(1 downto 0); 
-              is_intro, ultimate_win, is_error : in std_logic; -- is_error toegevoegd
+              is_intro, ultimate_win, is_error : in std_logic;
               rgb_out : out std_logic_vector(11 downto 0));
     end component;
     
@@ -61,7 +74,7 @@ architecture Behavioral of top is
     signal winner : std_logic_vector(1 downto 0);
     signal score_x, score_o : std_logic_vector(3 downto 0);
     signal board_reset : std_logic;
-    signal is_intro, ultimate_win, error_sig : std_logic; -- error_sig
+    signal is_intro, ultimate_win, error_sig : std_logic;
 
 begin
     board_reset <= reset or btnU;
@@ -77,7 +90,7 @@ begin
         win => win, winner => winner,
         score_x_out => score_x, score_o_out => score_o,
         is_intro => is_intro, ultimate_win => ultimate_win,
-        error_out => error_sig -- Verbinding
+        error_out => error_sig
     );
 
     bord: board port map (
@@ -90,7 +103,7 @@ begin
         pixel_x => pixel_x, pixel_y => pixel_y, video_on => video_on,
         win => win, winner => winner,
         is_intro => is_intro, ultimate_win => ultimate_win,
-        is_error => error_sig, -- Verbinding
+        is_error => error_sig, 
         rgb_out => text_rgb
     );
     
