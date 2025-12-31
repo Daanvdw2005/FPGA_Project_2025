@@ -1,4 +1,4 @@
-# 🎮 Tic-Tac-Toe (3-op-een-rij) op FPGA
+# 3-op-een-rij op FPGA
 
 ![VHDL](https://img.shields.io/badge/Language-VHDL-blue)
 ![Platform](https://img.shields.io/badge/Platform-Digilent_Basys_3-orange)
