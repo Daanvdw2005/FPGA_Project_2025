@@ -2,7 +2,7 @@
 
 ![VHDL](https://img.shields.io/badge/Language-VHDL-blue)
 ![Platform](https://img.shields.io/badge/Platform-Digilent_Basys_3-orange)
-![Tool](https://img.shields.io/badge/Vivado-2029.2-green)
+![Tool](https://img.shields.io/badge/Vivado-2019.2-green)
 ![Status](https://img.shields.io/badge/Status-Completed-success)
 
 > **Digital Systems Development Project** > Een volledige hardware-implementatie van het spel 3-op-een-rij, geschreven in VHDL zonder gebruik van een soft-core processor.
