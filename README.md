@@ -30,7 +30,7 @@ Het spel bevat geavanceerde logica zoals **Smart Switch Validatie** (om valsspel
 | **FPGA Board** | Digilent Basys 3 (Artix-7) |
 | **Scherm** | VGA Monitor (640x480 ondersteuning) |
 | **Kabel** | VGA kabel |
-| **Software** | AMD Xilinx Vivado (Versie 2023.2 of nieuwer) |
+| **Software** | AMD Xilinx Vivado (Versie 2019.2 of nieuwer) |
 
 ---
 
