@@ -67,7 +67,7 @@ Het project is **modulair** opgebouwd om debuggen en uitbreiden eenvoudig te mak
 
 1.  **Clone de repository:**
     ```bash
-    git clone [https://github.com/JOUW_GEBRUIKERSNAAM/JOUW_REPO_NAAM.git](https://github.com/JOUW_GEBRUIKERSNAAM/JOUW_REPO_NAAM.git)
+    git clone https://github.com/Daanvdw2005/FPGA_Project_2025.git
     ```
 2.  **Open in Vivado:**
     * Start Vivado 2019.2.
