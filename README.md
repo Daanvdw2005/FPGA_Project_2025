@@ -14,7 +14,7 @@ Dit project is ontwikkeld voor het vak *Digital Systems Development*. Het doel w
 
 Het spel bevat geavanceerde logica zoals **Smart Switch Validatie** (om valsspelen te voorkomen), een **State Machine** voor beurtwisselingen, en real-time **Win-detectie**.
 
-### ✨ Belangrijkste Features
+###  Belangrijkste Features
 * **VGA Output:** Genereert een stabiel 640x480 @ 60Hz signaal.
 * **Visuele Feedback:** Speelveld van 440x440px met duidelijke X (Speler 1) en Vierkant (Speler 2) symbolen.
 * **Scorebord:** Huidige score wordt bijgehouden op het 7-segment display (via Time Multiplexing).
