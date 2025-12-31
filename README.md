@@ -89,5 +89,5 @@ Alle screenshots & schema's kan u terug vinden in de [/assets map](./Het_Project
 ---
 
 ##  Auteur
-**Daan Van der Weken** Student IT-Electronics | Academiejaar 2025-2026  
+**Daan Van der Weken** Student Elektronica-ICT Internet of Things | Academiejaar 2025-2026  
 *AP Hogeschool Antwerpen*
